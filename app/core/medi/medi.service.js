@@ -6,14 +6,20 @@ angular.
     function($http,$sce) {
       var url = "https://demo.medinet.cl/api/dashboard/productividad/?format=json";
       //$sce.trustAsResourceUrl(url)
-      console.log($sce.trustAsUrl(url))
-
-      return $http($sce.trustAsUrl(url), {}, {
-        query: {
+      //console.log($sce.trustAsUrl(url))
+      function getDataSource(){
+        var data = $http({
           method: 'GET',
-          isArray: true
-        }
-      });
+          url: url
+        })
+        
+        return data;
+      }
+
+      
+      return {
+        getDataSource:getDataSource
+      };
     }
   ]);
 /*

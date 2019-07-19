@@ -2,6 +2,7 @@
     <!-- ============================================================== -->
     <!-- Topbar header - style you can find in pages.scss -->
     <!-- ============================================================== -->
+       
     <header class="topbar" data-navbarbg="skin5">
         <nav class="navbar top-navbar navbar-expand-md navbar-dark">
             <div class="navbar-header" data-logobg="skin5">
@@ -13,17 +14,17 @@
                     <b class="logo-icon">
                         <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                         <!-- Dark Logo icon -->
-                        <img src="lib/xtreme-admin-lite-master/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                        <img src="./lib/xtreme-admin-lite-master/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
                         <!-- Light Logo icon -->
-                        <img src="lib/xtreme-admin-lite-master/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        <img src="./lib/xtreme-admin-lite-master/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->
                     <span class="logo-text">
                          <!-- dark Logo text -->
-                         <img src="lib/xtreme-admin-lite-master/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                         <img src="./lib/xtreme-admin-lite-master/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
                          <!-- Light Logo text -->    
-                         <img src="lib/xtreme-admin-lite-master/assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                         <img src="./lib/xtreme-admin-lite-master/assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
                     </span>
                 </a>
                 <!-- ============================================================== -->
@@ -44,9 +45,6 @@
                     <!-- Search -->
                     <!-- ============================================================== -->
                 </ul>
-                <!-- ============================================================== -->
-                <!-- Right side toggle and nav items -->
-                <!-- ============================================================== -->
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <!-- User profile and search -->
@@ -63,6 +61,9 @@
                     <!-- User profile and search -->
                     <!-- ============================================================== -->
                 </ul>
+                <!-- ============================================================== -->
+                <!-- Right side toggle and nav items -->
+                <!-- ============================================================== -->
             </div>
         </nav>
     </header>
@@ -78,8 +79,27 @@
             <!-- Sidebar navigation-->
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
+                <!-- User Profile-->
+                <div class="user-profile d-flex no-block dropdown m-t-20">
+                    <div class="user-pic"><img src="./lib/xtreme-admin-lite-master/assets/images/users/1.jpg" alt="users" class="rounded-circle" width="40" /></div>
+                    <div class="user-content hide-menu m-l-10">
+                        <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <h5 class="m-b-0 user-name font-medium">Steave Jobs <i class="fa fa-angle-down"></i></h5>
+                            <span class="op-5 user-email">varun@gmail.com</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Userdd">
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End User Profile-->
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
-                        
                     
                 </ul>
                 
@@ -95,104 +115,98 @@
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
     <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <div class="page-breadcrumb">
-            <div class="row align-items-center">
-                <div class="col-5">
-                    <h4 class="page-title">Dashboard</h4>
-                    <div class="d-flex align-items-center">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Container fluid  -->
-        <!-- ============================================================== -->
-        <div class="container-fluid">
             <!-- ============================================================== -->
-            <!-- Sales chart -->
+            <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
-            <div class="row">
-                
-            <!-- ============================================================== -->
-            <!-- Sales chart -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Table -->
-            <!-- ============================================================== -->
-            <div class="row">
-                <!-- column -->
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- title -->
-                            <div class="d-md-flex align-items-center">
-                                <div>
-                                    <h4 class="card-title">Lista de surcursales</h4>
-                                </div>
-                            </div>
-                            <!-- title -->
-                        </div>
-                        <div class="table-responsive">
-                            <table class="table v-middle">
-                                <thead>
-                                    <tr class="bg-light">
-                                        <th class="border-top-0">Sucursal</th>
-                                        <th class="border-top-0">Anno</th>
-                                        <th class="border-top-0">Tipo</th>
-                                        <th class="border-top-0">Prevision</th>
-                                        <th class="border-top-0">Cantidad</th>
-                                        <th class="border-top-0">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="phone in $ctrl.data">
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="">
-                                                    <h4 class="m-b-0 font-16">{{data.surcursal}}</h4>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>{{data.anno}}</td>
-                                        <td>{{data.tipo}}</td>
-                                        <td>{{data.cantidad}}</td>
-                                        <td>{{data.total}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            <div class="page-breadcrumb">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        <h4 class="page-title">Dashboard</h4>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
-                </div>
             </div>
             <!-- ============================================================== -->
-            <!-- Table -->
+            <!-- End Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
-            
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Table -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- title -->
+                                <div class="d-md-flex align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Lista de sucursales</h4>
+                                    </div>
+                                </div>
+                                <!-- title -->
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table v-middle">
+                                    <thead>
+                                        <tr class="bg-light">
+                                            <th class="border-top-0">Sucursal</th>
+                                            <th class="border-top-0">Anno</th>
+                                            <th class="border-top-0">Tipo</th>
+                                            <th class="border-top-0">Prevision</th>
+                                            <th class="border-top-0">Cantidad</th>
+                                            <th class="border-top-0">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="sucursal in $ctrl.sucursales">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">{{sucursal.sucursal}}</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>{{sucursal.anno}}</td>
+                                            <td>{{sucursal.tipo}}</td>
+                                            <td>{{sucursal.prevision}}</td>
+                                            <td>{{sucursal.cantidad}}</td>
+                                            <td>{{sucursal.total}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Table -->
+                <!-- ============================================================== -->
+                
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                All Rights Reserved by Arturo Perez.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
-        <!-- End Container fluid  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
-        <footer class="footer text-center">
-            All Rights Reserved by Arturo Perez.
-        </footer>
-        <!-- ============================================================== -->
-        <!-- End footer -->
+        <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- End Page wrapper  -->
-    <!-- ============================================================== -->
 </div>

@@ -1,28 +1,32 @@
 {
-  "_from": "angular-sanitize",
+  "_args": [
+    [
+      "angular-sanitize@1.7.8",
+      "C:\\nodeprojects\\angular-challange"
+    ]
+  ],
+  "_from": "angular-sanitize@1.7.8",
   "_id": "angular-sanitize@1.7.8",
   "_inBundle": false,
   "_integrity": "sha512-sVq51is1cVNiPytH4JIEd7iRW0OBIRQGNETWkz1c/jnLv2sBf9oDxEd8enwDz/W2ULBIpqJPK/3AsIxmZyh9pA==",
   "_location": "/angular-sanitize",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "angular-sanitize",
+    "raw": "angular-sanitize@1.7.8",
     "name": "angular-sanitize",
     "escapedName": "angular-sanitize",
-    "rawSpec": "",
+    "rawSpec": "1.7.8",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "1.7.8"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/angular-sanitize/-/angular-sanitize-1.7.8.tgz",
-  "_shasum": "87d59f754bb18d286dfd9d6ce867299c094c6719",
-  "_spec": "angular-sanitize",
-  "_where": "C:\\projects\\angular-challange",
+  "_spec": "1.7.8",
+  "_where": "C:\\nodeprojects\\angular-challange",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
@@ -30,8 +34,6 @@
   "bugs": {
     "url": "https://github.com/angular/angular.js/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "AngularJS module for sanitizing HTML",
   "homepage": "http://angularjs.org",
   "jspm": {

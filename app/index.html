@@ -1,37 +1,49 @@
 <!doctype html>
 <html lang="en" ng-app="angularApp">
   <head>
-    <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="lib/xtreme-admin-lite-master/dist/css/style.css" />
-    <!-- link rel="stylesheet" href="app.css" /-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="desafio AngularJS">
+    <meta name="author" content="Arturo Perez">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="lib/xtreme-admin-lite-master/assets/images/favicon.png">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/app.css" />
     <!-- link rel="stylesheet" href="app.animations.css" /-->
-
-    <script src="lib/jquery/dist/jquery.js"></script>
-    <script src="lib/xtreme-admin-lite-master/dist/js/custom.js"></script>
-    <script src="lib/xtreme-admin-lite-master/dist/js/sidebarmenu.js"></script>
-    <script src="lib/xtreme-admin-lite-master/dist/js/waves.js"></script>
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular-animate/angular-animate.js"></script>
-    <script src="lib/angular-resource/angular-resource.js"></script>
-    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="lib/angular-route/angular-route.js"></script>
-    <script src="app.module.js"></script>
-    <script src="app.config.js"></script>
-    <!-- script src="app.animations.js"></script -->
-    <script src="core/core.module.js"></script>
-    <!-- script src="core/checkmark/checkmark.filter.js"></script -->
-    <script src="core/medi/medi.module.js"></script>1
-    <script src="core/medi/medi.service.js"></script>
-    <script src="dashboard/dashboard.module.js"></script>
-    <script src="dashboard/dashboard.component.js"></script>
+  
+    
   </head>
   <body>
 
-    <div class="view-container">
-      <div ng-view class="view-frame"></div>
-    </div>
+      <div ng-view ></div>
 
+      <script src="lib/angular/angular.js"></script>
+      <script src="lib/angular-animate/angular-animate.js"></script>
+      <script src="lib/angular-resource/angular-resource.js"></script>
+      <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+      <script src="lib/angular-route/angular-route.js"></script>
+      <script src="app.module.js"></script>
+      <script src="app.config.js"></script>
+      <!-- script src="app.animations.js"></script -->
+      <script src="core/core.module.js"></script>
+      <!-- script src="core/checkmark/checkmark.filter.js"></script -->
+      <script src="core/medi/medi.module.js"></script>
+      <script src="core/medi/medi.service.js"></script>
+      <script src="dashboard/dashboard.module.js"></script>
+      <script src="dashboard/dashboard.component.js"></script>
+      <script src="lib/xtreme-admin-lite-master/assets/libs/jquery/dist/jquery.min.js"></script>
+      <!-- Bootstrap tether Core JavaScript -->
+      <script src="lib/xtreme-admin-lite-master/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+      <script src="lib/xtreme-admin-lite-master/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="lib/xtreme-admin-lite-master/dist/js/app-style-switcher.js"></script>
+      <!--Wave Effects -->
+      <script src="lib/xtreme-admin-lite-master/dist/js/waves.js"></script>
+      <!--Menu sidebar -->
+      <script src="lib/xtreme-admin-lite-master/dist/js/sidebarmenu.js"></script>
+      <!--Custom JavaScript -->
+      <script src="lib/xtreme-admin-lite-master/dist/js/custom.js"></script>
   </body>
 </html>
