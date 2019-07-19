@@ -2,9 +2,13 @@
 
 angular.
   module('core.medi').
-  factory('medi', ['$resource',
-    function($resource) {
-      return $resource("http://demo.medinet.cl/"+"api/dashboard/"+'productividad/?format=json', {}, {
+  factory('medi', ['$http','$sce',
+    function($http,$sce) {
+      var url = "https://demo.medinet.cl/api/dashboard/productividad/?format=json";
+      //$sce.trustAsResourceUrl(url)
+      console.log($sce.trustAsUrl(url))
+
+      return $http($sce.trustAsUrl(url), {}, {
         query: {
           method: 'GET',
           isArray: true

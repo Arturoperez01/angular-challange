@@ -5,5 +5,6 @@ angular.module('angularApp', [
   'ngAnimate',
   'ngRoute',
   'core',
-  'dashboard'
+  'dashboard',
+  'ngSanitize'
 ]);
