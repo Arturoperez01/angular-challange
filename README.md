@@ -7,4 +7,4 @@
 - Node.js and Tools
 - gulp
 
-Correr el comando npm install y luego npm start.
+Correr el comando npm install, gulp build-css y luego npm start.
